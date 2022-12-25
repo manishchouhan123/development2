@@ -11,7 +11,7 @@ public class TestController {
 	
 	@GetMapping("/printRequest")
 	public ResponseEntity<String> printRequest(@RequestParam String name){
-		System.out.println("Name =================="+name);
+		System.out.println("TestController Name =================="+name);
 		return new ResponseEntity<String>(name , HttpStatus.OK);
 	}
 
